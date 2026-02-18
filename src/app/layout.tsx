@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { StructuredData } from "@/components/seo/structured-data";
 import { FAQSchema } from "@/components/seo/faq-schema";
 import { HowToSchema } from "@/components/seo/howto-schema";
+import { OrganizationSchema } from "@/components/seo/organization-schema";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
 import { env } from "@/env.mjs";
@@ -100,6 +101,7 @@ export default function RootLayout({
         <StructuredData />
         <FAQSchema />
         <HowToSchema />
+        <OrganizationSchema />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

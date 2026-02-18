@@ -29,6 +29,12 @@ export const siteConfig = {
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
+  // Social Profiles (for Organization schema sameAs)
+  socialProfiles: [
+    "https://twitter.com/jagodana",
+    // Add more: LinkedIn, YouTube, etc.
+  ],
+
   // Links
   links: {
     github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
