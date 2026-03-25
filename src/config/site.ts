@@ -1,27 +1,32 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "Git Branch Name Generator",
+  title: "Git Branch Name Generator - Clean Branch Names from Issue Titles",
+  description:
+    "Generate clean, consistent git branch names from issue titles, ticket numbers, and task descriptions. Supports GitFlow, GitHub Flow, and custom naming conventions.",
+  url: "https://git-branch-name-generator.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  headerIcon: "GitBranch", // lucide-react icon name
   // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  brandAccentColor: "#f59e0b", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "git branch name generator",
+    "branch naming convention",
+    "git branch from issue",
+    "gitflow branch name",
+    "github branch name",
+    "branch name converter",
+    "git branch tool",
+    "branch naming tool",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#f97316", // used in manifest and meta tags
 
   // Branding
   creator: "Jagodana",
@@ -36,139 +41,157 @@ export const siteConfig = {
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github:
+      "https://github.com/Jagodana-Studio-Private-Limited/git-branch-name-generator",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Git Branch Name Generator helps developers create clean, consistent branch names from issue titles and ticket descriptions. Free, fast, and works entirely in your browser.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "GitFlow & GitHub Flow support",
+      "Ticket number integration (JIRA, GH)",
+      "Configurable separators & max length",
+      "Branch history with one-click reuse",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Developer Productivity Tool",
+    titleLine1: "Generate Clean",
+    titleGradient: "Git Branch Names",
+    subtitle:
+      "Convert issue titles, ticket descriptions, and task names into clean, consistent git branch names. Supports GitFlow, GitHub Flow, JIRA tickets, and custom conventions.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🌿",
+      title: "Multiple Conventions",
+      description:
+        "Supports GitFlow (feature/, bugfix/, hotfix/), GitHub Flow, chore, docs, test prefixes and more.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "⚡",
+      title: "Instant Generation",
+      description:
+        "Paste any issue title and get a clean branch name instantly. Handles special characters, stop words, and length limits.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "Copy & History",
+      description:
+        "One-click copy with full git command preview. Recent branch history stored locally for quick reuse.",
     },
   ],
 
   // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "Commit Message Formatter",
+      url: "https://commit-message-formatter.tools.jagodana.com",
+      icon: "✍️",
+      description:
+        "Generate well-structured conventional commit messages effortlessly.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      name: "Gitignore Generator",
+      url: "https://gitignore-generator.tools.jagodana.com",
+      icon: "🚫",
+      description:
+        "Create .gitignore files for any language, framework, or tool.",
+    },
+    {
+      name: "Slug Generator",
+      url: "https://slug-generator.tools.jagodana.com",
+      icon: "🔗",
+      description: "Convert any text into clean, URL-friendly slugs.",
+    },
+    {
+      name: "README Generator",
+      url: "https://readme-generator.tools.jagodana.com",
+      icon: "📄",
+      description:
+        "Generate professional README files for your GitHub projects.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
-    },
-    {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📦",
+      description: "Format, validate, and minify JSON with syntax highlighting.",
     },
   ],
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your issue title",
+      text: "Copy and paste your GitHub issue title, JIRA ticket summary, or any task description into the input field.",
+      url: "",
+    },
+    {
+      name: "Choose branch type and options",
+      text: "Select the branch type (feature, bugfix, hotfix, etc.), add an optional ticket number, and configure separators and max length.",
+      url: "",
+    },
+    {
+      name: "Copy your branch name",
+      text: "Click the copy button to copy the generated branch name or the full git checkout command to your clipboard.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M", // ISO 8601 duration (e.g., PT1M = 1 minute)
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What is a git branch naming convention?",
+      answer:
+        "A git branch naming convention is a set of rules for consistently naming branches in a repository. Common conventions include GitFlow (using prefixes like feature/, bugfix/, hotfix/, release/) and GitHub Flow (using descriptive names). Consistent naming helps teams understand the purpose of each branch at a glance.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "How does the Git Branch Name Generator work?",
+      answer:
+        "The generator converts your issue title or task description into a clean branch name by lowercasing the text, removing special characters, replacing spaces with your chosen separator (hyphen or underscore), optionally removing common stop words, prepending the branch type prefix, and inserting ticket numbers if provided. Everything runs in your browser — no data is sent to any server.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I integrate JIRA ticket numbers into branch names?",
+      answer:
+        "Yes! Enter your ticket number (e.g., JIRA-123 or GH-45) in the ticket number field. The generator will automatically insert it after the branch type prefix, following the common convention: feature/JIRA-123-your-issue-title.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What is the recommended maximum branch name length?",
+      answer:
+        "Most teams use 50–72 characters as the maximum branch name length. Git itself has no strict limit, but shorter names are easier to type and read in terminal output. The generator defaults to 50 characters but you can adjust it from 30 to 100 characters using the length slider.",
+    },
+    {
+      question: "What branch types does the generator support?",
+      answer:
+        "The generator supports: feature (new features), bugfix (non-critical bug fixes), hotfix (urgent production fixes), chore (maintenance tasks), release (release preparation), docs (documentation changes), test (test additions), and a custom option where you can type your own prefix.",
     },
   ],
 
   // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "Git Branch Name Generator - Clean Branch Names from Issue Titles",
+      description:
+        "Generate clean, consistent git branch names from issue titles, ticket numbers, and task descriptions. Supports GitFlow, GitHub Flow, and custom naming conventions.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 

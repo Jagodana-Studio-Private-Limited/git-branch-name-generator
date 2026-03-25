@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "Git Branch Name Generator",
+  "short_name": "Branch Gen",
+  "description": "Generate clean, consistent git branch names from issue titles, ticket numbers, and task descriptions.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#f97316",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
